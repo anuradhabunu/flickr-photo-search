@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
+import FlickrApi  from '../helpers/FlickrApi'; 
 
 export default class TagSearch extends Component {
   buttonClicked() {
-    this.props.imageAction.onClickButton(this.refs.newText.value);
+    FlickrApi.requestApi(this.refs.newText.value);
   }
 
   keyPress(e) {
