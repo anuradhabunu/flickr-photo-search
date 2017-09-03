@@ -19,7 +19,7 @@ class FlickrApi {
 
   requestApi() {
     const script = document.createElement('script');
-    script.src = 'http://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=_flickrApi.responseApi';
+    script.src = 'https://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=_flickrApi.responseApi';
     document.head.appendChild(script);
   }
 
